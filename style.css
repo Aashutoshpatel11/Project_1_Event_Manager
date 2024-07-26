@@ -13,10 +13,11 @@
     background-color: #E7D4B5;
     /* min-width: 100px; */
     width: 300px;
-    height: 100%;
+    height: 800px;
     /* margin-right: 300px; */
     /* padding-bottom: 30px; */
     /* position: relative; */
+    position: fixed;
 }
 
 /* PROFILE AT TOP LEFT CORNER */
@@ -129,7 +130,7 @@
 }
 .TopNavigationBar{
     height: 55px;
-    width: 100%;
+    width: 100%-300px;
     background-color: #458712;
     position: fixed;
     position: relative;
@@ -138,6 +139,8 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    margin-left: 300px;
+    position: sticky;
 }
 .mainHeading{
     color: #fff;
@@ -166,13 +169,20 @@
 /* EVENT SECTION */
 .eventContentSection{
     background-color: #F6E6CB;
-    width: 100%;
+    width: 100%-300px;
+    min-height: 745px;
+    margin-left: 300px;
+    /* min-height:  */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .event{
     height: 350px;
     width: 250px;
     background-color: #d4d4d4;
     border-radius: 15px;
+    margin: 25px;
 }
 .coverimg{
     height: 150px;
@@ -241,4 +251,17 @@
     background-color: transparent;
     margin-top: 7px;
     font-weight: 100;
+}
+/* FOOTER */
+.foot{
+    width: 100%;
+    height: 30px;
+    color: #fff;
+    background-color: #676767;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
