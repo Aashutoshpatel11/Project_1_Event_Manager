@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTING</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="body">
+        <div class="sideNavBar">
+            <div class="button"></div>
+        </div>
+        <div class="top_contentbar">
+            <div class="topbar"></div>
+            <div class="contentsection"></div>
+        </div>
+    </div>
+    <div class="foot"></div>
+
+</body>
+<script>
+    const button = document.querySelector('.button')
+    const sidebar = document.querySelector('.sideNavBar')
+    button.addEventListener('click', function(){
+        if( sidebar.style.width === '300px' ){
+            sidebar.style.width='50px';
+        }else{
+            sidebar.style.width='300px';
+        }
+    })
+</script>
+
+</html>
