@@ -21,6 +21,11 @@
     font-weight: 700;
     font-style: normal;
 }
+.cedarville-cursive-regular {
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
   /* ****** */
 .allsection{
     width: 100%;
@@ -86,11 +91,13 @@
 }
 .sociallinks{
     max-width: 100%;
-    height: 45px;
+    padding: 7.5px;
+    height: 210px;
     border-radius: 22.5px;
     background-color: transparent;
     display: flex;
     justify-content: space-evenly;
+    align-items: flex-end;
     margin-top: 10;
 }
 .sociallinkbuttons{
@@ -102,6 +109,7 @@
     justify-content: center;
     align-items: center;
     background-size: cover;
+    margin-bottom: 15px;
 }
 .instagram{
     background-image: url("insta.jpg");
@@ -119,7 +127,7 @@
 .quickbuttons{
     max-width: 100%;
     /* height: 100%; */
-    margin-bottom: 200px;
+    margin-bottom: 45px;
     background-color: transparent;
 }
 .buttons{
@@ -136,6 +144,7 @@
     font-size: .6rem;
     color: #212121;
     overflow: hidden;
+    transition:box-shadow .5s ease;
 }
 .buttons i{
     background-color: purple;
@@ -147,16 +156,9 @@
     color: #212121
 }
 .buttons:hover{
-    animation: glow .5s ease;
-}
-@keyframes glow{
-    from{
-        box-shadow: 0px 0px 0px #7469B6;
-        border: 1px solid #AD88C6;
-    }to{
-        box-shadow: 0px 0px 8px #7469B6;
-        border: 2px solid #7469B6;
-    }
+    /* animation: glow .5s ease; */
+    box-shadow:inset 0px 0px 4px #7469B6;
+
 }
 /* TOP BAR */
 .rightsection{
@@ -164,9 +166,55 @@
     height: 700px;
     background-image: url("cover.jpg");
     background-size: cover;
+    background-repeat: 0;
 }
 .topbar{
     width: 100%;
     height: 55px;
     background-color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.mainheading{
+    background: linear-gradient(#7469B6, #AD88C6, #E1AFD1, #FFE6E6);
+    -webkit-background-clip: text;
+    color: transparent;
+    /* margin-left: 100px; */
+}
+.searchbar{
+    background-color: #fff;
+    display: flex;
+    border-radius: 15px;
+    transition: box-shadow .5s ease,
+    border .5s ease;
+}
+.searchbar input{
+    height: 30px;
+    width: 300px;
+    background-color: #E1AFD1;
+    border: 0;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding-left: 15px;
+}
+input:focus{
+    outline: none;
+}
+.searchbutton{
+    height: 30px;
+    width: 30px;
+    background-color: #7469B6;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchbutton i{
+    background-color: transparent;
+}
+.searchbar:hover{
+    box-shadow: 0px 0px 8px #7469B6;
+    border: 2px solid #7469B6;
 }
