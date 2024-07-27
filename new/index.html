@@ -9,6 +9,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <script>
+        const slider = document.getElementsByClassName('slider');
+        const leftnavbar = document.getElementsByClassName('leftnavbar');
+
+        console.log(slider)
+        console.log(leftnavbar);
+
+        slider.addEventListener('click', function(){
+            if( leftnavbar.style.width==='270px' ){
+                leftnavbar.style.width='75px';
+            }else{
+                leftnavbar.style.width='270px';
+            }
+        } )
+    </script>
 </head>
 <body>
     <div class="allsection">

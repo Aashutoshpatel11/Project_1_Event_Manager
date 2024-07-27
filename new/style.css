@@ -30,7 +30,7 @@
 }
 .leftnavbar{
     height: calc(100%-20px);
-    width: 270px;
+    max-width: 270px;
     background-color: #FFF;
     padding: 5px 15px 15px 15px;
     position: relative
