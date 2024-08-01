@@ -1,7 +1,7 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 0; 
     background-color: #212121;
     color: #fff;
 }
@@ -28,17 +28,18 @@
   }
   /* ****** */
 .allsection{
-    width: 100%;
+    width: 100vw;
     /* height: 100%; */
-    height: 100%;
+    height: 100vh;
     display: flex;
 }
 .leftnavbar{
-    height: calc(100%-20px);
+    height: 100vh;
     width: 270px;
     background-color: #FFF;
     padding: 5px 15px 15px 15px;
-    position: relative
+    position: relative;
+    /* top :0; */
 }
 .slider{
     background-color: #fff;
@@ -48,6 +49,7 @@
     position: absolute;
     top: 0px;
     right: -55px;
+    z-index: 1;
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
     border-right: 2px solid #AD88C6;
@@ -110,6 +112,7 @@
     align-items: center;
     background-size: cover;
     margin-bottom: 15px;
+    flex: wrap;
 }
 .instagram{
     background-image: url("insta.jpg");
@@ -163,7 +166,7 @@
 /* TOP BAR */
 .rightsection{
     width: 100%;
-    height: 700px;
+    height: 100vh;
     background-image: url("cover.jpg");
     background-size: cover;
     background-repeat: 0;
@@ -175,6 +178,8 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    position: sticky;
+    top: 0;
 }
 .mainheading{
     background: linear-gradient(#7469B6, #AD88C6, #E1AFD1, #FFE6E6);
@@ -216,5 +221,132 @@ input:focus{
 }
 .searchbar:hover{
     box-shadow: 0px 0px 8px #7469B6;
-    border: 2px solid #7469B6;
+    /* border: 2px solid #7469B6; */
+}
+
+/* FOOTER */
+.footer{
+    width: 100%;
+    height: 25px;
+    background-color: #a6a6a6;
+}
+/* ***** EVNET SECTION ***** */
+.eventsection{
+    height: calc(100% - 80px);
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.event{
+    height: 350px;
+    width: 250px;
+    border-radius: 20px;
+    border: .5px solid #f3f3f3;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    transition: box-shadow .4s ease;
+}
+.event:hover{
+    box-shadow: 0px 0px 12px #7469B6;
+}
+
+.eventcoverpic{
+    width: 100%;
+    height: 150px;
+    background-color: #fff;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.eventcontent{
+    height: 200px;
+    width: 100%;
+    background-color: transparent;
+    padding: 20px;
+    position: relative;
+}
+.eventheading{
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background-color: transparent;
+    position: absolute;
+    top: 20px;
+}
+
+.eventdescription{
+    font-family: "Oxygen", sans-serif;
+    font-weight: 50;
+    font-style: normal;
+    font-size: 12px;
+    background-color: transparent;
+    position: absolute;
+    top: 50px;
+}
+
+.eventdescription p{
+    background-color: transparent;
+    color: #d6d6d6;
+}
+
+.eventhostprofile{
+    width: calc(100% - 40px);
+    height: 40px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: .5px solid #f3f3f3;
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+}
+
+.eventhostprofilepic{
+    height: 100%;
+    width: 40px;
+    border-radius: 20px;
+    /* border: .5px solid #f3f3f3; */
+    background-image: url('profiledemo.jpg');
+    background-size: cover;
+}
+.eventhostname_time{
+    margin-left: 15px;
+    width: calc( 100% - 55px );
+    height: 100%;
+    background-color: transparent;
+
+}
+.eventhostname{
+    background-color: transparent;
+    margin-top: 2.5px;
+}
+.eventhostname h3{
+    font-family: "Oxygen", sans-serif;
+    font-weight: 50;
+    font-style: normal;
+    font-size: 12px;
+    background-color: transparent;
+}
+.eventposttime{
+    font-family: "Oxygen", sans-serif;
+    font-weight: 25;
+    font-style: normal;
+    font-size: 10px;
+    background-color: transparent;
+    margin-top: 2.5px;
+}
+.eventposttime p{
+    background-color: transparent;
+    color: #d6d6d6;
+}
+
+/* ***** Edit Event Section ***** */
+
+.addeventsection{
+    height: calc(100% - 80px);
+    width: 100%;
+    background-color: transparent;
+    display: none;
 }
